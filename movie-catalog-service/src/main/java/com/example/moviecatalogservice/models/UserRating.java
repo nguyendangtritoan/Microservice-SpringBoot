@@ -3,20 +3,26 @@ package com.example.moviecatalogservice.models;
 import java.util.List;
 
 public class UserRating {
-    private List<Rating> userRating;
+    private List<Rating> ratings;
+
+    private String userId;
 
     public UserRating() {
     }
 
-    public UserRating(List<Rating> userRating) {
-        this.userRating = userRating;
+    public List<Rating> getRatings() {
+        return ratings;
     }
 
-    public List<Rating> getUserRating() {
-        return userRating;
+    public void setRatings(List<Rating> ratings) {
+        this.ratings = ratings;
     }
 
-    public void setUserRating(List<Rating> userRating) {
-        this.userRating = userRating;
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }

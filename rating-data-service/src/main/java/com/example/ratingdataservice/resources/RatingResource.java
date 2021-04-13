@@ -22,7 +22,7 @@ public class RatingResource {
     public UserRating getUserRating(@PathVariable("userId") String userId){
         System.out.println("Hello");
         UserRating userRating = new UserRating();
-        userRating.setUserRating(Arrays.asList(
+        userRating.setRatings(Arrays.asList(
                 new Rating("100",4),
                 new Rating("200", 3)
         ));
